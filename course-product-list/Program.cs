@@ -34,7 +34,7 @@ namespace Course
                     case "U":
                         Console.Write("Manufacture date (DD/MM/YYYY): ");
                         DateTime manufactureDate = DateTime.Parse(Console.ReadLine());
-                        listProducts.Add(new Product(productName, productPrice));
+                        listProducts.Add(new UsedProduct(productName, productPrice, manufactureDate));
                         break;
 
                     case "I":
