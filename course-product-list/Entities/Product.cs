@@ -19,7 +19,7 @@ namespace course_product_list.Entities
         public virtual string PriceTag()
         {
             StringBuilder builder = new StringBuilder();
-            builder.AppendLine($"{Name} {Price:c}");
+            builder.Append($"{Name} {Price:c}");
             return builder.ToString();
         }
     }

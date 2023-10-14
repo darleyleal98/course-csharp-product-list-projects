@@ -17,7 +17,7 @@ namespace course_product_list.Entities
         public override string PriceTag()
         {
             StringBuilder builder = new StringBuilder();
-            builder.AppendLine($"{Name} {Price:c} (Customs fee: {TotalPrice:c})");
+            builder.Append($"{Name} {TotalPrice():c} (Customs fee: {CustomsFee:c})");
             return builder.ToString();
         }
         public double TotalPrice() => (Price + CustomsFee);

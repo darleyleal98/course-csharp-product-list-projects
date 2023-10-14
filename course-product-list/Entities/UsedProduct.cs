@@ -17,7 +17,7 @@ namespace course_product_list.Entities
         public override string PriceTag()
         {
             StringBuilder builder = new StringBuilder();
-            builder.AppendLine($"{Name} (used) {Price:c} (Manufacture date: {ManufactureDate})");
+            builder.Append($"{Name} (used) {Price:c} (Manufacture date: {ManufactureDate.ToString("dd/MM/yyyy")})");
             return builder.ToString();
         }
     }
